@@ -1,6 +1,10 @@
+import {
+  Container,
+} from './styles';
+
 function Layout({ children }) {
   return (
-    <div>
+    <Container>
       <header>
         Header
       </header>
@@ -12,7 +16,7 @@ function Layout({ children }) {
       <footer>
         Footer
       </footer>
-    </div>
+    </Container>
   );
 }
 
