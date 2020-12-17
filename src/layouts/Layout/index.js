@@ -1,13 +1,17 @@
 import {
   Container,
+  Header,
+  LogoPepsi
 } from './styles';
+
+import logoPepsi from '../../assets/images/logo.png';
 
 function Layout({ children }) {
   return (
     <Container>
-      <header>
-        Header
-      </header>
+      <Header>
+        <LogoPepsi src={logoPepsi} alt="Pepsi" />
+      </Header>
 
       <main>
         {children}
