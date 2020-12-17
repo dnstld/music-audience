@@ -1,5 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
+import {
+  colors,
+  fontFamily,
+} from './designTokens';
+
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
@@ -35,7 +40,8 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+    color: ${colors.white};
+    font-family: ${fontFamily.montserrat};
   }
   ol, ul {
     list-style: none;
