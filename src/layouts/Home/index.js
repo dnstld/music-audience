@@ -1,3 +1,5 @@
+import RegisterForm from '../../components/RegisterForm';
+
 import artistName from '../../assets/images/artist-name.png';
 import secondaryAd from '../../assets/images/secondary-ad.jpg';
 import formHeading from '../../assets/images/form-heading.png';
@@ -26,7 +28,7 @@ function Home() {
               src={formHeading}
               alt="Register to see an exclusive livestream performance with Kem and be entered for a chance to win a virtual meet and greet"
             />
-            <h1>Register section</h1>
+            <RegisterForm />
           </RegisterContent>
         </RegisterSection>
         <Ad src={secondaryAd} alt="Ad: Listen to the full song"/>
