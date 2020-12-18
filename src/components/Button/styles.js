@@ -5,7 +5,7 @@ import {
   fontWeight,
   colors,
   spacing,
-} from '../../designTokens';
+} from '../../styles/designTokens';
 
 const BUTTON = {
   fontSize: fontSizes.font22,

@@ -5,7 +5,7 @@ import {
   spacing,
   breakpoints,
   fontSizes,
-} from '../../designTokens';
+} from '../../styles/designTokens';
 
 const CONTAINER = {
   maxWidth: '1024px',

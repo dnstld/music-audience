@@ -1,7 +1,7 @@
 import Layout from './layouts/Layout';
 import Home from './layouts/Home';
 
-import GlobalStyles from './globalStyles';
+import GlobalStyles from './styles/global/globalStyles';
 
 function App() {
   return (

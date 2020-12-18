@@ -1,10 +1,7 @@
 import {
-  fontSizes,
-  fontWeight,
   colors,
   spacing,
-} from '../../designTokens';
-
+} from '../../styles/designTokens';
 
 export const form = {
   input: {

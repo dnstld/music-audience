@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 import {
   spacing,
-} from '../../designTokens';
+  breakpoints,
+} from '../../styles/designTokens';
 
 const FORM = {
   gap: spacing.spacer11
@@ -42,4 +43,8 @@ export const AgreeCheckbox = styled.div`
 
 export const EnterButton = styled.div`
   grid-area: enterButton;
+
+  @media (min-width: ${breakpoints.lg}) {
+    margin-top: ${spacing.spacer16};
+  }
 `;

@@ -6,7 +6,7 @@ import {
   breakpoints,
   spacing,
   gradients,
-} from '../../designTokens';
+} from '../../styles/designTokens';
 
 const REGISTER_COLUMN = {
   widthDesktop: '638px',
@@ -17,7 +17,8 @@ const ARTIST_NAME = {
   widthTablet: '338px',
   widthDesktop: '344px',
   bottom: 0,
-  bottomTabled: spacing.spacer13,
+  bottomTabled: '13px',
+  bottomDesktop: '235px',
 };
 
 const REGISTER_SECTION = {
@@ -73,6 +74,7 @@ export const ArtistName = styled.img`
   }
   @media (min-width: ${breakpoints.lg}) {
     width: ${ARTIST_NAME.widthDesktop};
+    bottom: ${ARTIST_NAME.bottomDesktop};
   }
 `;
 

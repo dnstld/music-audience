@@ -5,7 +5,7 @@ import {
   fontWeight,
   colors,
   spacing,
-} from '../../designTokens';
+} from '../../styles/designTokens';
 
 import { form } from '../../styles/elements/form';
 

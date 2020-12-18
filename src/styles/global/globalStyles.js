@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import {
   colors,
   fontFamily,
-} from './designTokens';
+} from '../designTokens';
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/ 

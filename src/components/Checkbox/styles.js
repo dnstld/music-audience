@@ -6,7 +6,7 @@ import {
   fontSizes,
   fontWeight,
   spacing,
-} from '../../designTokens';
+} from '../../styles/designTokens';
 
 import { form } from '../../styles/elements/form';
 
@@ -21,6 +21,7 @@ const P ={
   marginLeft: spacing.spacer11,
   fontWeight: fontWeight.bold,
   fontSize: fontSizes.font14,
+  lineHeight: '140%',
 };
 
 export const Container = styled.div`
@@ -57,5 +58,6 @@ export const Container = styled.div`
     margin-left: ${P.marginLeft};
     font-weight: ${P.fontWeight};
     font-size: ${P.fontSize};
+    line-height: ${P.lineHeight};
   }
 `;
