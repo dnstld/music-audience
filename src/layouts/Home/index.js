@@ -1,6 +1,9 @@
+import artistName from '../../assets/images/artist-name.png';
+
 import {
   Container,
   Cover,
+  ArtistName,
   RegisterColumn,
 } from './styles';
 
@@ -8,7 +11,7 @@ function Home() {
   return (
     <Container>
       <Cover>
-        <h1>Artist name</h1>
+        <ArtistName src={artistName} alt="KEM"/>
       </Cover>
       <RegisterColumn>
         <h1>Music Audience</h1>
