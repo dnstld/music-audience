@@ -1,4 +1,5 @@
 import Input from '../../components/Input';
+import Checkbox from '../../components/Checkbox';
 import Button from '../../components/Button';
 
 import {
@@ -7,7 +8,7 @@ import {
   LastName,
   ZipCode,
   Email,
-  Checkbox,
+  AgreeCheckbox,
   EnterButton,
 } from './styles';
 
@@ -42,9 +43,9 @@ function RegisterForm() {
           placeholder="Email Address"
         />
       </Email>
-      <Checkbox>
-        Checkbox
-      </Checkbox>
+      <AgreeCheckbox>
+        <Checkbox />
+      </AgreeCheckbox>
       <EnterButton>
         <Button type="button">
           Enter

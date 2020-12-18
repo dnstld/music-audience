@@ -16,7 +16,7 @@ export const Form = styled.form`
     'firstName lastName'
     'zipCode zipCode'
     'email email'
-    'checkbox checkbox'
+    'agreeCheckbox agreeCheckbox'
     'enterButton enterButton';
 `;
 
@@ -36,8 +36,8 @@ export const Email = styled.div`
   grid-area: email;
 `;
 
-export const Checkbox = styled.div`
-  grid-area: checkbox;
+export const AgreeCheckbox = styled.div`
+  grid-area: agreeCheckbox;
 `;
 
 export const EnterButton = styled.div`
