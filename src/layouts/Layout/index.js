@@ -1,7 +1,8 @@
 import {
   Container,
   Header,
-  LogoPepsi
+  LogoPepsi,
+  Footer,
 } from './styles';
 
 import logoPepsi from '../../assets/images/logo.png';
@@ -17,9 +18,10 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer>
-        Footer
-      </footer>
+      <Footer>
+        <span>© 2020 Music Audience Exchange.</span>
+        <span>Privacy Policy, Powered by Music Audience Exchange.</span>
+      </Footer>
     </Container>
   );
 }

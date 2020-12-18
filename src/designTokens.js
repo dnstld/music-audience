@@ -20,6 +20,7 @@ export const screens = {
 }
 
 export const spacing = {
+  spacer4: '4px',
   spacer11: '11px',
   spacer13: '13px',
   spacer16: '16px',
