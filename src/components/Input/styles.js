@@ -7,13 +7,16 @@ import {
   spacing,
 } from '../../designTokens';
 
+import { form } from '../../styles/elements/form';
+
 const INPUT = {
-  borderRadius: spacing.spacer6,
+  background: form.input.background,
+  borderRadius: form.input.spacer6,
+  boxShadow: form.input.boxShadow,
   padding: `${spacing.spacer11} ${spacing.spacer12}`,
   fontSize: fontSizes.font15,
   fontWeight: fontWeight.bold,
   color: colors.grey300,
-  boxShadow: `0px 3px 6px rgba(0, 0, 0, .25)`,
   transformPlaceholder: `opacity .25s ease-in-out`,
 };
 
@@ -22,6 +25,7 @@ export const Container = styled.div`
 
   > input {
     width: inherit;
+    border-radius: ${INPUT.background};
     color: ${INPUT.color};
     text-align: center;
     text-transform: uppercase;

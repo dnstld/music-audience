@@ -5,7 +5,16 @@ import {
 function Checkbox({children, ...rest}) {
   return (
     <Container>
-      <h1>Checkbox</h1>
+      <input
+        type="checkbox"
+        value="value"
+        id="input-checkbox"
+        {...rest}
+      />
+      <label htmlFor="input-checkbox"></label>
+      <p>
+        {children}
+      </p>
     </Container>
   );
 }

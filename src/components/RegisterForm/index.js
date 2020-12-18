@@ -44,7 +44,9 @@ function RegisterForm() {
         />
       </Email>
       <AgreeCheckbox>
-        <Checkbox />
+        <Checkbox>
+          By checking this box and clicking enter, I agree that I am 21 years of age or older.
+        </Checkbox>
       </AgreeCheckbox>
       <EnterButton>
         <Button type="button">
