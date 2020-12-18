@@ -1,4 +1,5 @@
 import Layout from './layouts/Layout';
+import Home from './layouts/Home';
 
 import GlobalStyles from './globalStyles';
 
@@ -7,7 +8,7 @@ function App() {
     <Layout>
       <GlobalStyles />
 
-      <h1>Music Audience</h1>
+      <Home />
     </Layout>
   );
 }
