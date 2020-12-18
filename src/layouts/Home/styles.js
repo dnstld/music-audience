@@ -60,4 +60,13 @@ export const ArtistName = styled.img`
   }
 `;
 
-export const RegisterColumn = styled.div``;
+export const RegisterColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const RegisterSection = styled.div``;
+
+export const Ad = styled.img`
+  width: 100%;
+`;

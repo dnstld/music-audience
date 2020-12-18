@@ -1,10 +1,13 @@
 import artistName from '../../assets/images/artist-name.png';
+import secondaryAd from '../../assets/images/secondary-ad.jpg';
 
 import {
   Container,
   Cover,
   ArtistName,
   RegisterColumn,
+  RegisterSection,
+  Ad
 } from './styles';
 
 function Home() {
@@ -14,7 +17,10 @@ function Home() {
         <ArtistName src={artistName} alt="KEM"/>
       </Cover>
       <RegisterColumn>
-        <h1>Music Audience</h1>
+        <RegisterSection>
+          <h1>Register section</h1>
+        </RegisterSection>
+        <Ad src={secondaryAd} alt="Ad: Listen to the full song"/>
       </RegisterColumn>
     </Container>
   );
