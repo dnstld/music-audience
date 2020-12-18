@@ -1,3 +1,4 @@
+import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import {
@@ -14,16 +15,32 @@ function RegisterForm() {
   return (
     <Form>
       <FirstName>
-        FirstName
+        <Input
+          type="text"
+          name="firstName"
+          placeholder="First Name"
+        />
       </FirstName>
       <LastName>
-        LastName
+        <Input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+        />
       </LastName>
       <ZipCode>
-        ZipCode
+        <Input
+          name="zip"
+          type="text"
+          pattern="[0-9]*"
+          placeholder="Zip Code"
+        />
       </ZipCode>
       <Email>
-        Email
+        <Input
+          type="email"
+          placeholder="Email Address"
+        />
       </Email>
       <Checkbox>
         Checkbox
