@@ -5,6 +5,7 @@ import artistPhotography from '../../assets/images/artist-photography.jpg';
 import {
   breakpoints,
   spacing,
+  gradients,
 } from '../../designTokens';
 
 const REGISTER_COLUMN = {
@@ -17,6 +18,21 @@ const ARTIST_NAME = {
   widthDesktop: '344px',
   bottom: 0,
   bottomTabled: spacing.spacer13,
+};
+
+const REGISTER_SECTION = {
+  background: gradients.primary,
+  padding: `${spacing.spacer50} ${spacing.spacer24}`,
+  paddingDesktop: `${spacing.spacer50} ${spacing.spacer98}`,
+};
+
+const REGISTER_CONTENT = {
+  maxWidth: '336px',
+};
+
+const REGISTER_HEADING = {
+  marginBottom: spacing.spacer16,
+  maxWidth: '395px',
 };
 
 export const Container = styled.div`
@@ -65,7 +81,35 @@ export const RegisterColumn = styled.div`
   flex-direction: column;
 `;
 
-export const RegisterSection = styled.div``;
+export const RegisterSection = styled.section`
+  width: 100%;
+  background: ${REGISTER_SECTION.background};
+  padding: ${REGISTER_SECTION.padding};
+  
+  @media (min-width: ${breakpoints.lg}) {
+    flex: 1;
+    padding: ${REGISTER_SECTION.paddingDesktop};
+  }
+`;
+
+export const RegisterContent = styled.div`
+  width: 100%;
+  max-width: ${REGISTER_CONTENT.maxWidth};
+  margin: 0 auto;
+
+  @media (min-width: ${breakpoints.lg}) {
+    max-width: none;
+  }
+`;
+
+export const RegisterHeading = styled.img`
+  width: 100%;
+  margin-bottom: ${REGISTER_HEADING.marginBottom};
+
+  @media (min-width: ${breakpoints.lg}) {
+    max-width: ${REGISTER_HEADING.maxWidth};
+  }
+`;
 
 export const Ad = styled.img`
   width: 100%;
