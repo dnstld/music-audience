@@ -9,12 +9,15 @@ import {
 } from '../../styles/designTokens';
 
 import { form } from '../../styles/elements/form';
+import { utils } from '../../styles/utils/focus';
 
 const LABEL = {
   background: form.input.background,
-  borderRadius: form.input.spacer6,
+  borderRadius: form.input.borderRadius,
   boxShadow: form.input.boxShadow,
   size: '33px',
+  focusTransform: utils.focus.transform,
+  focusShadow: utils.focus.shadow,
 };
 
 const P ={
@@ -35,6 +38,9 @@ export const Container = styled.div`
     &:checked ~ label::after {
       opacity: 1;
     }
+    &:focus ~ label {
+      box-shadow: ${LABEL.focusShadow};
+    }
   }
   label {
     display: flex;
@@ -47,6 +53,7 @@ export const Container = styled.div`
     box-shadow: ${LABEL.boxShadow};
     border-radius: ${LABEL.borderRadius};
     background-color: ${LABEL.background};
+    transition: ${LABEL.focusTransform};
 
     &::after {
       content: url(${checkIcon});

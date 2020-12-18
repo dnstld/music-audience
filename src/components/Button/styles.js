@@ -4,8 +4,9 @@ import {
   fontSizes,
   fontWeight,
   colors,
-  spacing,
 } from '../../styles/designTokens';
+
+import { utils } from '../../styles/utils/focus';
 
 const BUTTON = {
   fontSize: fontSizes.font22,
@@ -14,8 +15,8 @@ const BUTTON = {
   borderWidth: '3px',
   borderRadius: '25px',
   height: '50px',
-  transform: `box-shadow .3s ease-in-out`,
-  focus: `0 0 0 ${spacing.spacer4} ${colors.primaryDark}`,
+  focusTransform: utils.focus.transform,
+  focusShadow: utils.focus.shadow,
 }
 
 export const Button = styled.button`
@@ -33,11 +34,11 @@ export const Button = styled.button`
   padding: 0;
   user-select: none;
   cursor: pointer;
-  transition: ${BUTTON.transform};
+  transition: ${BUTTON.focusTransform};
 
   &:hover,
   &:focus {
     outline: 0;
-    box-shadow: ${BUTTON.focus};
+    box-shadow: ${BUTTON.focusShadow};
   }
 `;

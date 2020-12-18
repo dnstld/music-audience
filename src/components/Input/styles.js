@@ -11,7 +11,7 @@ import { form } from '../../styles/elements/form';
 
 const INPUT = {
   background: form.input.background,
-  borderRadius: form.input.spacer6,
+  borderRadius: form.input.borderRadius,
   boxShadow: form.input.boxShadow,
   padding: `${spacing.spacer11} ${spacing.spacer12}`,
   fontSize: fontSizes.font15,
