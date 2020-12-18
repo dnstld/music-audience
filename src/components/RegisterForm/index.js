@@ -1,3 +1,5 @@
+import Button from '../../components/Button';
+
 import {
   Form,
   FirstName,
@@ -27,7 +29,9 @@ function RegisterForm() {
         Checkbox
       </Checkbox>
       <EnterButton>
-        EnterButton
+        <Button type="button">
+          Enter
+        </Button>
       </EnterButton>
     </Form>
   );
